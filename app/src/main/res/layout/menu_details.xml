@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_weight="1"
+    >
+
+    <ImageView
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img"
+        android:src="@mipmap/menu_details_round"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_toEndOf="@+id/img"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/nme"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:layout_toRightOf="@+id/img"
+        android:id="@+id/c"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/nme"
+        android:fontFamily="sans-serif-black"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Ingredients"
+        android:layout_below="@id/img"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ingrs"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:fontFamily="sans-serif-black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingredients"
+        android:layout_below="@id/ingrs"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ingr"
+        android:fontFamily="sans-serif-black"/>
+
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:layout_below="@id/ingr"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/qn"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:fontFamily="sans-serif-black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:layout_below="@id/qn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/q"
+        android:fontFamily="sans-serif-black"/>
+        </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ingr"
+        android:text="STEPS"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/stp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stp"
+        android:text="Description"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/dsc"
+        android:fontFamily="sans-serif-black"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

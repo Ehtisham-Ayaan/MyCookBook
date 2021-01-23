@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/na"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:ems="15"
+            android:hint="Enter name of Your Recepie"
+            android:inputType="text"
+            />
+        <TextView
+            android:id="@+id/cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:ems="15"
+            android:hint="Select Category"
+            android:inputType="text"
+            android:layout_below="@id/na"/>
+        <RadioGroup
+            android:layout_below="@id/cat"
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/italian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Italian"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/Chinese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chinese" />
+
+            <RadioButton
+                android:id="@+id/desi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desi"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Roast"
+                android:checked="true" />
+            <RadioButton
+                android:id="@+id/custom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Custom"
+                android:checked="true" />
+
+        </RadioGroup>
+        <TextView
+            android:layout_below="@id/radio"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Image is Compulsory"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/cpm"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="55dp"
+            android:onClick="pic"
+            android:layout_below="@+id/cpm"
+            android:id="@+id/pict"
+            android:background="@mipmap/add"/>
+
+
+        <EditText
+            android:id="@+id/ingr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:ems="15"
+            android:hint="Enter Ingredients of Your Recepie"
+            android:inputType="text"
+            android:layout_below="@id/pict"
+            />
+
+        <EditText
+            android:id="@+id/quant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:ems="15"
+            android:hint="Enter Quantity"
+            android:inputType="text"
+            android:layout_below="@id/ingr"
+            />
+
+
+        <EditText
+            android:id="@+id/descr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:ems="15"
+            android:hint="Enter Description of Your Recepie"
+            android:inputType="text"
+            android:layout_below="@id/quant"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="40dp"
+            android:onClick="update"
+            android:layout_below="@+id/descr"
+            android:text="Update your Recepie"
+            android:textSize="20dp"
+            android:textColorHighlight="#17FFFFFF"
+            />
+
+    </RelativeLayout>
+</ScrollView>
